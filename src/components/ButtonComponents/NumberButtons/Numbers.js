@@ -24,25 +24,24 @@ const Numbers = () => {
        {
          <div>
 
-           topRow.map((numbers)=>(
+           {/* topRow.map((numbers)=>( */}
           
            <NumberButton  key = {numbers + 1} topRow={topRow}/>
            
-         ))
-         
-
-           middleRow.map((numbers)=>(
+         {/* ));
+          */}
+           {/* middleRow.map((numbers)=>( */}
           
            <NumberButton  key = {numbers + 1} middleRow={middleRow}/>
            
-         ))
+         {/* )); */}
         
 
-           bottomRow.map((numbers)=>(
+           {/* bottomRow.map((numbers)=>( */}
           
            <NumberButton  key = {numbers + 1} bottomRow={bottomRow}/>
            
-         ))
+         {/* )); */}
          </div>
        }
     </div>
