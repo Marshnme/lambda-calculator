@@ -22,26 +22,14 @@ const Numbers = () => {
        it any props needed by the child component*/}
 
        {
-         <div>
+         <div >
 
-           {/* topRow.map((numbers)=>( */}
-          
            <NumberButton  key = {numbers + 1} topRow={topRow}/>
            
-         {/* ));
-          */}
-           {/* middleRow.map((numbers)=>( */}
-          
            <NumberButton  key = {numbers + 1} middleRow={middleRow}/>
-           
-         {/* )); */}
         
-
-           {/* bottomRow.map((numbers)=>( */}
-          
            <NumberButton  key = {numbers + 1} bottomRow={bottomRow}/>
-           
-         {/* )); */}
+        
          </div>
        }
     </div>
