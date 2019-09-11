@@ -14,7 +14,7 @@ const Numbers = () => {
   const [middleRow] = useState(numbers.slice(3,6));
   const [bottomRow] = useState(numbers.slice(6,9));
 
-  console.log("number:", bottomRow);
+  // console.log("number:", number);
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -23,12 +23,23 @@ const Numbers = () => {
 
        {
          <div >
-
-           <NumberButton  key = {numbers + 1} topRow={topRow}/>
+            <div>
+              {
+                topRow.map((number,index) =>  < NumberButton  key = {index} number={number}/>
+                )}
+            </div>
            
-           <NumberButton  key = {numbers + 1} middleRow={middleRow}/>
-        
-           <NumberButton  key = {numbers + 1} bottomRow={bottomRow}/>
+           <div>
+             {middleRow.map((number,index) => <NumberButton  key = {numbers + 1} number={number}/>
+             )}
+             </div>
+           
+           <div>
+              {bottomRow.map((number,index) => <NumberButton  key = {numbers} number={number}/>
+              )}
+
+           </div>
+           
         
          </div>
        }
